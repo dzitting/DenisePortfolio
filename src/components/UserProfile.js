@@ -20,12 +20,12 @@ function Main({ changeState, pageTrans }) {
         }}>
         <div id="iconBell--container">
           <figure id="bellIcon--wrapper">
-            <img src={Bell} id="bellIcon" />
+            <img src={Bell} id="bellIcon" alt="small pink bell icon" />
           </figure>
         </div>
         <div id="profile--wrapper">
             <figure id="profile-img--wrapper">
-                <img id="profile-img" src={UserImg}/>
+                <img id="profile-img" alt="pink profile avatar female"src={UserImg}/>
             </figure>
         </div>
         <div id="profile-text--wrapper">
@@ -35,7 +35,7 @@ function Main({ changeState, pageTrans }) {
         <div id="text-like--wrapper">
             <p>Active 3 hours ago</p>
             <figure id="like-btn--wrapper">
-                <img id="like-btn" src={LikeBtn} />
+                <img id="like-btn" src={LikeBtn} alt="small pink like button" />
             </figure>
         </div>
       </div>
