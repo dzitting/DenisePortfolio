@@ -9,10 +9,27 @@
   color: #5a494e;
 }
 
+body {
+  overflow-x: hidden;
+}
+
+#root {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.dark {
+  color: #5a494e;
+}
+
 .pink {
   color: #ebbab9;
 }
 
 .green {
   color: #739687;
+}
+
+.center {
+  text-align: center;
 }

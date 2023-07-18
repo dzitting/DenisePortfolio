@@ -1,0 +1,93 @@
+#user-welcome-text {
+    padding: 5% 0;
+    width: 25%;
+    margin: 0 auto;
+    animation: slideup 2s linear 1 normal forwards;
+  }
+  
+  #user-profile-container {
+    background-color: #739687;
+    box-shadow: #5a494e 5px 10px 50px;
+    width: 350px;
+    height: 350px;
+    margin: 0 auto;
+    border-radius: 15px;
+    transform: scale(1);
+    transition: 500ms ease-in-out;
+    cursor: pointer;
+    animation: appear 2s normal 1 linear;
+  }
+  
+  #user-profile-container:hover {
+    transform: scale(1.1);
+    transition: 500ms ease-in-out;
+  }
+  
+  #profile-img--wrapper {
+    overflow: hidden;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #profile-img--wrapper:hover {
+    animation: rotateAnimation ease 1.2s alternate-reverse 2 both;
+  }
+  
+  #profile-img {
+    width: 150px;
+    height: 150px;
+  }
+  
+  #iconBell--container {
+    padding: 2% 2% 0 2%;
+    width: 100%;
+  }
+  
+  #bellIcon--wrapper {
+    width: 32px;
+    height: 32px;
+    overflow: hidden;
+    transform: scale(1);
+    transition: 200ms ease-in-out;
+  }
+  
+  #bellIcon--wrapper:hover {
+    animation: jingle 500ms infinite 500ms forwards alternate;
+  }
+  
+  #bellIcon {
+    width: 100%;
+    height: 100%;
+  }
+  
+  #profile-text--wrapper {
+    padding: 10px;
+  }
+  
+  #text-like--wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 35%;
+    padding: 0 2%;
+  }
+  
+  #like-btn--wrapper {
+    overflow: hidden;
+    width: 32px;
+    height: 32px;
+  }
+  
+  #like-btn--wrapper:hover {
+    animation: pop 200ms linear 1 forwards normal;
+    transform: scale(1);
+    transition: 300ms ease-in-out;
+  }
+  
+  #like-btn {
+    width: 100%;
+    height: 100%;
+  }

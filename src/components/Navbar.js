@@ -1,5 +1,6 @@
 import React from 'react';
 import '../styles/Main.css';
+import '../styles/Navbar.css';
 import logo from '../assets/DZCodes.svg';
 import Navlinks from './Navlinks';
 

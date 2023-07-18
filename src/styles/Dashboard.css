@@ -1,0 +1,200 @@
+.dashboard {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  #profileDisplay-div {
+    width: 21%;
+    height: 200px;
+    background-color: #adadad2c;
+    border-radius: 15px;
+    transition: 100ms ease-in-out;
+  }
+  
+  #profileDisplay-div:hover {
+    transform: scale(1.05);
+    box-shadow: #5a494e 5px 2px 15px;
+    transition:  200ms smooth ease-in-out;
+  }
+  
+  #dash--wrapper {
+    padding: 10px;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-wrap: wrap;
+  }
+  
+  #dash--wrapper:hover, #badges--wrapper:hover {
+    cursor: pointer;
+  }
+  
+  #dash-name-text {
+    padding: 0 10px;
+  }
+  
+  #badges--wrapper {
+    padding-top: 10px;
+    width: 100%;
+    /* background-color: red; */
+    height: 40%;
+    display: flex;
+  }
+  
+  #badges--wrapper h4 {
+    font-size: 14px;
+  }
+  
+  #certs--wrapper, #years--wrapper {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  #certs--wrapper img, #years--wrapper img {
+    width: 20%;
+    height: auto;
+  }
+  
+  #skills--container {
+    width: 100%;
+    height: min-content;
+    padding: 10px;
+  }
+  
+  #skills--container figure {
+    width: 100%;
+    overflow: hidden;
+    height: 100px;
+  }
+  
+  #skills--container figure img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  #write-me--container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+  }
+  
+  #write-me--container img {
+    width: 75%;
+    height: 80%;
+    object-fit: contain;
+    object-position: center center;
+    margin: 0 auto;
+    transition: 200ms ease-in-out;
+  }
+  
+  #write-me--container img:hover {
+    transform: scale(1.05);
+    transition: 500ms ease-in-out;
+  }
+  
+  #coursesDisplay-div {
+    /* background-color: #ebbab9; */
+    width: 54%;
+    height: 100%;
+    padding: 10px;
+    border-radius: 12px;
+    background-color: #ebbab92c;
+  }
+  
+  #coursesDisplay-div h1 {
+    padding-bottom: 10px;
+  }
+  
+  #cards--wrapper {
+    width: 100%;
+    height: 25%;
+    display: flex;
+  }
+  
+  .bottom {
+    overflow-y: hidden;
+    overflow-x: scroll;
+  }
+  
+  #cards--wrapper div {
+    max-width: 30%;
+    min-width: 30%;
+    padding: 10px;
+    margin-right: 15px;
+    background-color: #5a494e2c;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transform: scale(1) translateY(0);
+  }
+  
+  #cards--wrapper div {
+    max-width: 30%;
+    min-width: 30%;
+    padding: 10px;
+    margin-right: 15px;
+    background-color: #5a494e2c;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transform: scale(1) translateY(0);
+  }
+  
+  #cards--wrapper div:hover {
+    transform: scale(1.05) translateY(-5px);
+    transition: 200ms ease-in-out;
+  }
+  
+  #cards--wrapper figure {
+    overflow: hidden;
+    width: 100%;
+    height: 30%;
+    margin: 0 auto;
+  }
+  
+  #cards--wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center center;
+  }
+  
+  #peopleSay-div {
+    /* background-color: #739687; */
+    width: 19%;
+    height: 100%;
+    background-color: #5a494e2c;
+  }
+  
+  
+  #peopleSay-img--wrapper {
+    width: 100%;
+    height: 100%;
+  }
+  
+.row {
+    display: flex;
+    max-width: 100%;
+    min-width: 100%;
+    justify-content: space-evenly;
+  }
+  
+  .row p {
+    width: fit-content;
+    background-color: #adadad2c;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin: 5px auto;
+  }
+  
+  .row p:hover {
+    transform: scale(1.2) translateY(-5px);
+    transition: 100ms ease-in-out;
+    cursor: default ;
+  }

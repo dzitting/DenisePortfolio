@@ -1,10 +1,11 @@
 import React from "react";
 import "../styles/Main.css";
+import '../styles/Profile.css';
 import Bell from "../assets/notification.png";
 import UserImg from '../assets/undraw_female_avatar_efig.svg';
 import LikeBtn from "../assets/like (1).png";
 
-function Main({ changeState, pageTrans }) {
+function UserProfile({ changeState }) {
   return (
     <main>
       <div id="user-welcome-text">
@@ -43,4 +44,4 @@ function Main({ changeState, pageTrans }) {
   );
 }
 
-export default Main;
+export default UserProfile;

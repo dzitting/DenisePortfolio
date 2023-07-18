@@ -1,7 +1,10 @@
 import React, { useState } from 'react';
 import '../styles/Main.css';
-// import Navbar from '../components/Navbar';
-import UserProfile from '../components/UserProfile';
+import '../styles/animations.css';
+import Navbar from './Navbar';
+import UserProfile from './UserProfile';
+import Dashboard from './Dashboard';
+import About from './About';
 
 function Main() {
   const [currentPage, setCurrentPage] = useState("index");
@@ -14,17 +17,29 @@ function Main() {
     return (
       <React.StrictMode>
         {/* Replace 'UserProfile' with the appropriate component */}
+        <Navbar changeState={changeState} />
         <UserProfile changeState={changeState} />
       </React.StrictMode>
     );
   } else if (currentPage === "home") {
     return (
       <React.StrictMode>
-        {/* Replace 'Main' with the appropriate component */}
-        <Main changeState={changeState} />
+        {/* Replace 'Dashboard' with the appropriate component */}
+        <Navbar changeState={changeState} />
+        <Dashboard changeState={changeState} />
       </React.StrictMode>
     );
-  } else {
+  }else if (currentPage === "about")
+  {
+    return (
+      <React.StrictMode>
+        {/* Replace 'About' with the appropriate component */}
+        <Navbar changeState={changeState} />
+        <About changeState={changeState} />
+      </React.StrictMode>
+    );
+  } 
+  else {
     return <h1>Index</h1>;
   }
 }
