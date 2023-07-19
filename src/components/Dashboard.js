@@ -10,6 +10,9 @@ import Android from "../assets/undraw_android_jr64.svg";
 import AI from "../assets/undraw_artificial_intelligence_re_enpp.svg";
 import HeadImage from "../assets/undraw_teaching_re_g7e3.svg";
 import WriteMe from "../assets/letter.svg";
+import Codepen from "../assets/codepen-1.jpg";
+import Shophub from "../assets/shop-hub.jpg";
+import Counselor from "../assets/counselor-img.jpg";
 
 
 function Dashboard({ changeState }) {
@@ -83,10 +86,16 @@ function Dashboard({ changeState }) {
     }
   }, []);
 
+  const changeActive = () =>
+  {
+    document.querySelector(".nav-link.active").classList.remove("active");
+    document.getElementById("about").classList.add("active");
+  }
+  
   return (
     <main className="dashboard" id="root-dash">
       <div id="profileDisplay-div">
-        <div id="dash--wrapper" onClick={() => changeState('about')}>
+        <div id="dash--wrapper" onClick={() => {changeState('about'); changeActive()}}>
           <figure id="dash-img--wrapper">
             <img
               id="dash-img"
@@ -160,7 +169,7 @@ function Dashboard({ changeState }) {
               <figure id={index}>
                 <img src={item.image} />
               </figure>
-              <p>Description: {item.description}</p>
+              <p>{item.description}</p>
               {item.avgScore && <p>Average Score: {item.avgScore}</p>}
             </div>
           ))}
@@ -174,7 +183,7 @@ function Dashboard({ changeState }) {
               <figure id={index}>
                 <img src={item.image} />
               </figure>
-              <p>Description: {item.description}</p>
+              <p>{item.description}</p>
               <p>Completed: {item.date}</p>
               {item.avgScore && <p>Average Score: {item.avgScore}</p>}
             </div>
@@ -182,9 +191,21 @@ function Dashboard({ changeState }) {
         </div>
       </div>
       <div id="peopleSay-div">
+        <h1>Featured</h1>
         <figure id="peopleSay-img--wrapper">
           <img src={HeadImage} />
         </figure>
+        <div className='featured-container'>
+          <figure className='featured-wrapper'>
+            <img src={Shophub} />
+          </figure>
+          <figure className='featured-wrapper'>
+            <img src={Counselor} />
+          </figure>
+          <figure className='featured-wrapper'>
+            <img src={Codepen} />
+          </figure>
+        </div>
       </div>
     </main>
   );

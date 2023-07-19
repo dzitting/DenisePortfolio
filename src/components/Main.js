@@ -1,15 +1,15 @@
 import React, { useState } from 'react';
-import '../styles/Main.css';
-import '../styles/animations.css';
-import Navbar from './Navbar';
+import '../styles/Main.css'; //Style for most general things
+import '../styles/animations.css'; //General animations 
+import Navbar from './Navbar'; //NavBar Component etc
 import UserProfile from './UserProfile';
 import Dashboard from './Dashboard';
 import About from './About';
 
 function Main() {
-  const [currentPage, setCurrentPage] = useState("index");
+  const [currentPage, setCurrentPage] = useState("home"); //Creating an object with a state set at index
 
-  const changeState = (page) => {
+  const changeState = (page) => { //Calls the changeState with the correct page to update to
     setCurrentPage(page);
   };
 
@@ -17,7 +17,6 @@ function Main() {
     return (
       <React.StrictMode>
         {/* Replace 'UserProfile' with the appropriate component */}
-        <Navbar changeState={changeState} />
         <UserProfile changeState={changeState} />
       </React.StrictMode>
     );
@@ -36,6 +35,33 @@ function Main() {
         {/* Replace 'About' with the appropriate component */}
         <Navbar changeState={changeState} />
         <About changeState={changeState} />
+      </React.StrictMode>
+    ); 
+  }
+  else if (currentPage === "contact")
+  {
+    return (
+      <React.StrictMode>
+        {/* Replace 'About' with the appropriate component */}
+        <Navbar changeState={changeState} />
+      </React.StrictMode>
+    );
+  } 
+  else if (currentPage === "statistics")
+  {
+    return (
+      <React.StrictMode>
+        {/* Replace 'About' with the appropriate component */}
+        <Navbar changeState={changeState} />
+      </React.StrictMode>
+    );
+  } 
+  else if (currentPage === "projects")
+  {
+    return (
+      <React.StrictMode>
+        {/* Replace 'About' with the appropriate component */}
+        <Navbar changeState={changeState} />
       </React.StrictMode>
     );
   } 

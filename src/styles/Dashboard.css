@@ -1,3 +1,24 @@
+.row {
+    display: flex;
+    max-width: 100%;
+    min-width: 100%;
+    justify-content: space-evenly;
+  }
+  
+  .row p {
+    width: fit-content;
+    background-color: #adadad2c;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin: 5px auto;
+  }
+  
+  .row p:hover {
+    transform: scale(1.2) translateY(-5px);
+    transition: 100ms ease-in-out;
+    cursor: default ;
+  }
+
 .dashboard {
     display: flex;
     justify-content: space-evenly;
@@ -165,36 +186,46 @@
     object-position: center center;
   }
   
+    /*
+    
+    THIRD COLUMN 
+    
+    */
+
   #peopleSay-div {
     /* background-color: #739687; */
     width: 19%;
-    height: 100%;
+    height: 100vh;
     background-color: #5a494e2c;
+    border-radius: 15px;
   }
-  
+
+  #peopleSay-div h1 {
+    padding: 10px 10px 0px 10px;
+  }
   
   #peopleSay-img--wrapper {
     width: 100%;
-    height: 100%;
-  }
-  
-.row {
+    height: 40%;
     display: flex;
-    max-width: 100%;
-    min-width: 100%;
-    justify-content: space-evenly;
+    position: relative;
+    top: -8%;
+  }
+
+  #peopleSay-img--wrapper img {
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+    transform: translate(25%, 0);
   }
   
-  .row p {
-    width: fit-content;
-    background-color: #adadad2c;
-    border-radius: 5px;
-    padding: 5px 10px;
-    margin: 5px auto;
+  .featured-container {
+    width: 100%;
+    height: 60%;
   }
   
-  .row p:hover {
-    transform: scale(1.2) translateY(-5px);
-    transition: 100ms ease-in-out;
-    cursor: default ;
+  .featured-wrapper {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
   }

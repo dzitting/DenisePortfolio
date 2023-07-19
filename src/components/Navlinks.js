@@ -5,30 +5,36 @@ import toggleIcon from "../assets/contrast.png";
 
 function Navlinks({ changeState }) {
 
+  const changeActive = (event) =>
+  {
+    document.querySelector(".nav-link.active").classList.remove("active");
+    event.target.classList.add("active");
+  }
+
   return (
     <ul id="nav-links--list">
       <li className="nav-link--container">
-        <a href="#" className="nav-link" onClick={() => changeState('home')}>
+        <a href="#" className="nav-link active" id="overview" onClick={(event) => {changeState('home'); changeActive(event)}}>
           Overview
         </a>
       </li>
       <li className="nav-link--container">
-        <a href="#" className="nav-link" onClick={() => changeState('about')}>
+        <a href="#" className="nav-link" id="about" onClick={(event) => {changeState('about'); changeActive(event)}}>
           About
         </a>
       </li>
       <li className="nav-link--container">
-        <a href="#" className="nav-link" onClick={() => changeState("contact")}>
+        <a href="#" className="nav-link" onClick={(event) => {changeState('contact'); changeActive(event)}}>
           Contact
         </a>
       </li>
       <li className="nav-link--container">
-        <a href="#" className="nav-link" onClick={() => changeState("statistics")}>
+        <a href="#" className="nav-link" onClick={(event) => {changeState('statistics'); changeActive(event)}}>
           Statistics
         </a>
       </li>
       <li className="nav-link--container">
-        <a href="#" className="nav-link" onClick={() => changeState("projects")}>
+        <a href="#" className="nav-link" onClick={(event) => {changeState('projects'); changeActive(event)}}>
           Projects
         </a>
       </li>

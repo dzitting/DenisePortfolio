@@ -3,7 +3,7 @@
   }
   
   .slideup-class {
-    animation: slideup 3.2s 1 ;
+    animation: slideup 3.2s 1 forwards ease-in;
   }
 
   /*
