@@ -7,7 +7,7 @@ import Dashboard from './Dashboard';
 import About from './About';
 
 function Main() {
-  const [currentPage, setCurrentPage] = useState("home"); //Creating an object with a state set at index
+  const [currentPage, setCurrentPage] = useState("index"); //Creating an object with a state set at index
 
   const changeState = (page) => { //Calls the changeState with the correct page to update to
     setCurrentPage(page);

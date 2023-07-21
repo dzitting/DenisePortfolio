@@ -75,16 +75,16 @@ function Dashboard({ changeState }) {
     },
   ];
 
-  React.useEffect(() => {
-    const parent = document.getElementById("root-dash");
-    const childElements = parent.children;
-    for (let i = 0; i < childElements.length; i++) {
-      const childEl = childElements[i];
-      setTimeout(() => {
-        childEl.classList.add("slideup-class");
-      }, i * 250);
-    }
-  }, []);
+  // React.useEffect(() => {
+  //   const parent = document.getElementById("root-dash");
+  //   const childElements = parent.children;
+  //   for (let i = 0; i < childElements.length; i++) {
+  //     const childEl = childElements[i];
+  //     setTimeout(() => {
+  //       childEl.classList.add("slideup-class");
+  //     }, i * 250);
+  //   }
+  // }, []);
 
   const changeActive = () =>
   {
@@ -94,7 +94,7 @@ function Dashboard({ changeState }) {
   
   return (
     <main className="dashboard" id="root-dash">
-      <div id="profileDisplay-div">
+      <div className='slideup-class' id="profileDisplay-div">
         <div id="dash--wrapper" onClick={() => {changeState('about'); changeActive()}}>
           <figure id="dash-img--wrapper">
             <img
@@ -159,7 +159,7 @@ function Dashboard({ changeState }) {
         </figure>
       </div>
 
-      <div id="coursesDisplay-div">
+      <div className="slideup-class" id="coursesDisplay-div">
         <h1>In Progress</h1>
         <div id="cards--wrapper" className="top">
           {inProg.map((item, index) => (
@@ -190,7 +190,7 @@ function Dashboard({ changeState }) {
           ))}
         </div>
       </div>
-      <div id="peopleSay-div">
+      <div className='slideup-class' id="peopleSay-div">
         <h1>Featured</h1>
         <figure id="peopleSay-img--wrapper">
           <img src={HeadImage} />
