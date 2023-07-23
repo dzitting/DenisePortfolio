@@ -18,7 +18,7 @@ header, main {
   margin: 0 auto;
 }
 
-.dark {
+.regular {
   color: #5a494e;
 }
 
@@ -45,6 +45,15 @@ header, main {
 
 .opacity-zero {
   opacity: 0;
+}
+
+.unselectable {
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #cc0000;
 }
 
 /*

@@ -35,6 +35,11 @@
   brightness(96%) contrast(94%);
 }
 
+.dark .logo-pink {
+  transition: 400ms ease-in-out all;
+  filter: invert(56%) sepia(30%) saturate(254%) hue-rotate(102deg) brightness(94%) contrast(86%);
+}
+
 .dark #toggleIcon
 {
   transition: 400ms ease-in-out all;
@@ -62,4 +67,9 @@ body::-webkit-scrollbar-track .dark {
   background-color: #ebbab9;    /* color of the scroll thumb */
   border-radius: 20px;       /* roundness of the scroll thumb */
   border: 2px solid grey;  /* creates padding around scroll thumb */
+}
+
+.dark footer {
+  transition: 400ms ease-in-out all;
+  background-color: #ebbab9;
 }

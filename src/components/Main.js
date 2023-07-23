@@ -3,10 +3,12 @@ import '../styles/Main.css'; //Style for most general things
 import '../styles/animations.css'; //General animations 
 import '../styles/dark.css'; //Dark theme style
 import '../styles/light.css'; //Light theme transition
+import Script from "../scripts/script.js";
 import Navbar from './Navbar'; //NavBar Component etc
 import UserProfile from './UserProfile';
 import Dashboard from './Dashboard';
 import About from './About';
+import Footer from "./Footer";
 
 function Main() {
   const [currentPage, setCurrentPage] = useState("about"); //Creating an object with a state set at index
@@ -28,6 +30,7 @@ function Main() {
         {/* Replace 'Dashboard' with the appropriate component */}
         <Navbar changeState={changeState} />
         <Dashboard changeState={changeState} />
+        <Footer/>
       </React.StrictMode>
     );
   }else if (currentPage === "about")
@@ -37,6 +40,7 @@ function Main() {
         {/* Replace 'About' with the appropriate component */}
         <Navbar changeState={changeState} />
         <About changeState={changeState} />
+        <Footer/>
       </React.StrictMode>
     ); 
   }
@@ -46,6 +50,7 @@ function Main() {
       <React.StrictMode>
         {/* Replace 'About' with the appropriate component */}
         <Navbar changeState={changeState} />
+        <Footer/>
       </React.StrictMode>
     );
   } 
@@ -55,6 +60,8 @@ function Main() {
       <React.StrictMode>
         {/* Replace 'About' with the appropriate component */}
         <Navbar changeState={changeState} />
+
+        <Footer/>
       </React.StrictMode>
     );
   } 
@@ -64,6 +71,7 @@ function Main() {
       <React.StrictMode>
         {/* Replace 'About' with the appropriate component */}
         <Navbar changeState={changeState} />
+        <Footer/>
       </React.StrictMode>
     );
   } 
