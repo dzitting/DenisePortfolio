@@ -17,7 +17,7 @@ function Navbar({ changeState })
         <header>
             <nav>
                 <figure id="logo-container">
-                    <img id='logo-img' alt="logo" src={logo}  onClick={() => {changeState('home'); changeActive()}}></img>
+                    <img id='logo-img' alt="logo" className='logo-green' src={logo}  onClick={() => {changeState('home'); changeActive()}}></img>
                 </figure>
                 <div id='nav-links-container'>
                     <Navlinks changeState={changeState}/>

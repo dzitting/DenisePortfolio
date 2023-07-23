@@ -40,11 +40,6 @@ a {
   cursor: pointer;
 }
 
-#logo-img {
-  filter: invert(84%) sepia(72%) saturate(366%) hue-rotate(295deg)
-    brightness(96%) contrast(94%);
-}
-
 #toggleIcon--container {
   width: 24px;
   height: 24px;

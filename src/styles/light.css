@@ -1,0 +1,54 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li,
+a,
+button,
+em,
+strong,
+div {
+  transition: 600ms ease-in-out all;
+}
+
+body {
+  transition: 600ms ease-in-out all;
+}
+
+.pink {
+  transition: 600ms ease-in-out all;
+}
+
+.green {
+  transition: 600ms ease-in-out all;
+}
+
+.logo-green {
+  transition: 600ms ease-in-out all;
+}
+
+#toggleIcon
+{
+  transition: 600ms ease-in-out all;
+}
+
+#write-me--container img {
+  transition: 600ms ease-in-out all;
+}
+
+#cards--wrapper div,
+.row p {
+  transition: 600ms ease-in-out all;
+}
+
+body::-webkit-scrollbar-track {
+  transition: 600ms ease-in-out all;
+}
+
+body::-webkit-scrollbar-thumb {
+    transition: 600ms ease-in-out all;
+  border-radius: 20px;       /* roundness of the scroll thumb */
+}

@@ -11,6 +11,12 @@ function Navlinks({ changeState }) {
     event.target.classList.add("active");
   }
 
+  const toggleColors = () =>
+  {
+    let base = document.getElementById("root");
+    base.classList.toggle("dark");
+  }
+
   return (
     <ul id="nav-links--list">
       <li className="nav-link--container">
@@ -39,7 +45,7 @@ function Navlinks({ changeState }) {
         </a>
       </li>
       <li className="nav-link--container">
-        <figure id="toggleIcon--container">
+        <figure id="toggleIcon--container" onClick={() => toggleColors()}>
           <img id="toggleIcon" src={toggleIcon} alt="Toggle Icon" />
         </figure>
       </li>

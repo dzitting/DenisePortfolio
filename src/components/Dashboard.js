@@ -92,6 +92,11 @@ function Dashboard({ changeState }) {
     document.getElementById("about").classList.add("active");
   }
   
+  const redirectFeatured = () =>
+  {
+    window.location = "https://dzitting.github.io";
+  }
+  
   return (
     <main className="dashboard" id="root-dash">
       <div className='slideup-class' id="profileDisplay-div">
@@ -104,9 +109,9 @@ function Dashboard({ changeState }) {
             />
           </figure>
           <div id="dash-name-text">
-            <h3>Denise Zitting</h3>
-            <h3>Front End Developer</h3>
-            <p>Arizona, USA</p>
+            <h3 className='green'>Denise Zitting</h3>
+            <h3 className='green'>Front End Developer</h3>
+            <p><em>Arizona, USA</em></p>
           </div>
           <div id="badges--wrapper">
             <div id="certs--wrapper">
@@ -160,7 +165,7 @@ function Dashboard({ changeState }) {
       </div>
 
       <div className="slideup-class" id="coursesDisplay-div">
-        <h1>In Progress</h1>
+        <h1 className='green'>In Progress</h1>
         <div id="cards--wrapper" className="top">
           {inProg.map((item, index) => (
             <div key={index}>
@@ -174,7 +179,7 @@ function Dashboard({ changeState }) {
             </div>
           ))}
         </div>
-        <h1>Completed</h1>
+        <h1 className='green'>Completed</h1>
         <div id="cards--wrapper" className="bottom">
           {completed.map((item, index) => (
             <div key={index}>
@@ -190,12 +195,12 @@ function Dashboard({ changeState }) {
           ))}
         </div>
       </div>
-      <div className='slideup-class' id="peopleSay-div">
-        <h1>Featured</h1>
-        <figure id="peopleSay-img--wrapper">
+      <div className='slideup-class' id="featured-div">
+        <h1 className='green'>Featured</h1>
+        <figure id="featured-img--wrapper">
           <img src={HeadImage} />
         </figure>
-        <div className='featured-container'>
+        <div onClick={() => redirectFeatured()} className='featured-container'>
           <figure className='featured-wrapper'>
             <img src={Shophub} />
           </figure>

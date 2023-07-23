@@ -1,13 +1,15 @@
 import React, { useState } from 'react';
 import '../styles/Main.css'; //Style for most general things
 import '../styles/animations.css'; //General animations 
+import '../styles/dark.css'; //Dark theme style
+import '../styles/light.css'; //Light theme transition
 import Navbar from './Navbar'; //NavBar Component etc
 import UserProfile from './UserProfile';
 import Dashboard from './Dashboard';
 import About from './About';
 
 function Main() {
-  const [currentPage, setCurrentPage] = useState("index"); //Creating an object with a state set at index
+  const [currentPage, setCurrentPage] = useState("about"); //Creating an object with a state set at index
 
   const changeState = (page) => { //Calls the changeState with the correct page to update to
     setCurrentPage(page);

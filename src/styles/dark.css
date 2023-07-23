@@ -1,0 +1,65 @@
+.dark h1,
+.dark h2,
+.dark h3,
+.dark h4,
+.dark h5,
+.dark h6,
+.dark p,
+.dark li,
+.dark a,
+.dark button,
+.dark em,
+.dark strong {
+  transition: 400ms ease-in-out all;
+  color: white;
+}
+
+.dark {
+  transition: 400ms ease-in-out all;
+  background: black;
+}
+
+.dark .pink {
+  transition: 400ms ease-in-out all;
+  color: #739687;
+}
+
+.dark .green {
+  transition: 400ms ease-in-out all;
+  color: #ebbab9;
+}
+
+.dark .logo-green {
+  transition: 400ms ease-in-out all;
+  filter: invert(84%) sepia(72%) saturate(366%) hue-rotate(295deg)
+  brightness(96%) contrast(94%);
+}
+
+.dark #toggleIcon
+{
+  transition: 400ms ease-in-out all;
+  filter: invert(84%) sepia(72%) saturate(366%) hue-rotate(295deg)
+  brightness(96%) contrast(94%);
+}
+
+.dark #write-me--container img {
+  transition: 400ms ease-in-out all;
+  color:#ebbab9;
+}
+
+.dark #cards--wrapper div,
+.dark .row p {
+  transition: 400ms ease-in-out all;
+  background-color: #ebbab99a;
+}
+
+body::-webkit-scrollbar-track .dark {
+  background: #5a494e;        /* color of the tracking area */
+  transition: 400ms ease-in-out all;
+}
+
+.dark body::-webkit-scrollbar-thumb {
+  background-color: #ebbab9;    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 2px solid grey;  /* creates padding around scroll thumb */
+}
