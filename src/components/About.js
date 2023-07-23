@@ -13,7 +13,7 @@ function About({ changeState }) {
             <img src={AboutImg}/>
           </figure>
           <div id='about-text'>
-            <h1>About Me.</h1>
+            <h1 className='green'>About Me.</h1>
             <h2>Non magna pariatur Lorem ipsum proident commodo labore.</h2>
           </div>
         </div>
