@@ -9,6 +9,10 @@
   color: #5a494e;
 }
 
+li {
+  list-style-type: none;
+}
+
 body {
   overflow-x: hidden;
 }
@@ -29,6 +33,10 @@ header, main {
 .logo-pink {
   filter: invert(84%) sepia(72%) saturate(366%) hue-rotate(295deg)
     brightness(96%) contrast(94%);
+}
+
+.logo-regular {
+  filter: invert(29%) sepia(7%) saturate(1142%) hue-rotate(291deg) brightness(88%) contrast(83%);
 }
 
 .pink {

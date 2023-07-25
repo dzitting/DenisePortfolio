@@ -9,6 +9,9 @@ function Navlinks({ changeState }) {
   {
     document.querySelector(".nav-link.active").classList.remove("active");
     event.target.classList.add("active");
+    const href = `/${event.target.id}`; // Set the href to /{id}
+    window.history.pushState(null, "", href); // Change the URL without reloading
+    changeState(event.target.id); // Call the changeState function to update currentPage
   }
 
   const toggleColors = () =>
@@ -20,7 +23,7 @@ function Navlinks({ changeState }) {
   return (
     <ul id="nav-links--list">
       <li className="nav-link--container">
-        <a href="#" className="nav-link active" id="overview" onClick={(event) => {changeState('home'); changeActive(event)}}>
+        <a href="#" className="nav-link active" id="home" onClick={(event) => {changeState('home'); changeActive(event)}}>
           Overview
         </a>
       </li>
@@ -30,17 +33,17 @@ function Navlinks({ changeState }) {
         </a>
       </li>
       <li className="nav-link--container">
-        <a href="#" className="nav-link" onClick={(event) => {changeState('contact'); changeActive(event)}}>
+        <a href="#" className="nav-link" id="contact" onClick={(event) => {changeState('contact'); changeActive(event)}}>
           Contact
         </a>
       </li>
       <li className="nav-link--container">
-        <a href="#" className="nav-link" onClick={(event) => {changeState('statistics'); changeActive(event)}}>
+        <a href="#" className="nav-link" id="statistics" onClick={(event) => {changeState('statistics'); changeActive(event)}}>
           Statistics
         </a>
       </li>
       <li className="nav-link--container">
-        <a href="#" className="nav-link" onClick={(event) => {changeState('projects'); changeActive(event)}}>
+        <a href="#" className="nav-link" id="projects" onClick={(event) => {changeState('projects'); changeActive(event)}}>
           Projects
         </a>
       </li>

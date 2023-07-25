@@ -1,0 +1,147 @@
+#top-section {
+    display: flex;
+}
+
+#two-third {
+    min-width: 55vw;
+    max-width: 55vw;
+    height: 80vh;
+    border-top: solid black 2px;
+    border-right: solid black 2px;
+}
+
+#header-spot--wrapper {
+    display: flex;
+}
+
+#content--wrapper {
+    width: 55%;
+    position: relative;
+    top: 0;
+    left: 20%;
+}
+
+#two-third h2 {
+    font-size: 32px;
+}
+
+#two-third h1 {
+    font-size: 48px;
+    margin: 35px;
+}
+
+#two-third h3 {
+    margin-bottom: 50px;
+}
+
+#one-third {
+    max-width: 45vw;
+    height: 80vh;
+    border-top: solid black 2px;
+}
+
+.cta {
+    padding: 10px 15px;
+    background-color: #739687;
+    color: white;
+    border: none;
+    box-shadow: 2px 2px 0 0px #5a494e;
+    cursor: pointer;
+}
+
+.dark .cta {
+    padding: 10px 15px;
+    background-color: #ebbab9;
+    color: white;
+    border: none;
+    box-shadow: inset 2px 2px 0 0px #5a494e;
+}
+
+#visual--wrapper {
+    overflow: hidden;
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.visual {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+
+#bottom--wrapper {
+    width: 100vw;
+    height: 20vh;
+    border-top: solid black 2px;
+    display: flex;
+}
+
+#certifications--wrapper, 
+#course-hours--wrapper,
+#providers--wrapper {
+    width: 30%;
+    font-size: 24px;
+    border-bottom: 2px solid black;
+}
+
+#certifications--wrapper, #course-hours--wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-right: black solid 2px;
+}
+
+#certifications--wrapper img, #course-hours--wrapper img {
+    width: 50px;
+    height: 50px;
+}
+
+#providers--wrapper {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.provider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.provider--img {
+    width: 50px;
+    height: 50px;
+}
+
+/*
+
+DARK EDITS
+
+*/
+
+.dark #two-third {
+    border-top: solid white 2px;
+    border-right: solid white 2px;
+}
+
+.dark #one-third {
+    border-top: solid white 2px;
+}
+
+.dark #bottom--wrapper {
+    border-top: solid white 2px;
+}
+
+.dark #certifications--wrapper, 
+.dark #course-hours--wrapper,
+.dark #providers--wrapper {
+    border-bottom: 2px solid white;
+}
+
+.dark #certifications--wrapper, 
+.dark #course-hours--wrapper {
+    border-right: white solid 2px;
+}

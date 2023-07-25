@@ -10,7 +10,7 @@ function Navbar({ changeState })
     const changeActive = () =>
     {
       document.querySelector(".nav-link.active").classList.remove("active");
-      document.getElementById("overview").classList.add("active");
+      document.getElementById("home").classList.add("active");
     }
 
     return(

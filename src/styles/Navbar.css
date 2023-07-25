@@ -1,5 +1,6 @@
 nav {
   /* background-color: blue; */
+  margin-bottom: 2%;
   padding: 20px 0;
   display: flex;
   justify-content: space-between;

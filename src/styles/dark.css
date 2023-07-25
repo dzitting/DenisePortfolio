@@ -24,7 +24,8 @@
   color: #739687;
 }
 
-.dark .green {
+.dark .green,
+.dark .regular {
   transition: 400ms ease-in-out all;
   color: #ebbab9;
 }
@@ -32,24 +33,33 @@
 .dark .logo-green {
   transition: 400ms ease-in-out all;
   filter: invert(84%) sepia(72%) saturate(366%) hue-rotate(295deg)
-  brightness(96%) contrast(94%);
+    brightness(96%) contrast(94%);
+}
+.dark .logo-regular {
+  transition: 400ms ease-in-out all;
+  filter: invert(84%) sepia(72%) saturate(366%) hue-rotate(295deg)
+    brightness(96%) contrast(94%);
 }
 
 .dark .logo-pink {
   transition: 400ms ease-in-out all;
-  filter: invert(56%) sepia(30%) saturate(254%) hue-rotate(102deg) brightness(94%) contrast(86%);
+  filter: invert(56%) sepia(30%) saturate(254%) hue-rotate(102deg)
+    brightness(94%) contrast(86%);
 }
 
-.dark #toggleIcon
-{
+.dark #toggleIcon {
   transition: 400ms ease-in-out all;
   filter: invert(84%) sepia(72%) saturate(366%) hue-rotate(295deg)
-  brightness(96%) contrast(94%);
+    brightness(96%) contrast(94%);
+}
+
+.dark .social-contact-icon:hover {
+  filter: drop-shadow(5px 5px 5px #ebbab9);
 }
 
 .dark #write-me--container img {
   transition: 400ms ease-in-out all;
-  color:#ebbab9;
+  color: #ebbab9;
 }
 
 .dark #cards--wrapper div,
@@ -59,17 +69,26 @@
 }
 
 body::-webkit-scrollbar-track .dark {
-  background: #5a494e;        /* color of the tracking area */
+  background: #5a494e; /* color of the tracking area */
   transition: 400ms ease-in-out all;
 }
 
 .dark body::-webkit-scrollbar-thumb {
-  background-color: #ebbab9;    /* color of the scroll thumb */
-  border-radius: 20px;       /* roundness of the scroll thumb */
-  border: 2px solid grey;  /* creates padding around scroll thumb */
+  background-color: #ebbab9; /* color of the scroll thumb */
+  border-radius: 20px; /* roundness of the scroll thumb */
+  border: 2px solid grey; /* creates padding around scroll thumb */
 }
 
 .dark footer {
   transition: 400ms ease-in-out all;
-  background-color: #ebbab9;
+  background-color: black;
+}
+
+.dark #links-header {
+  height: 30%;
+  width: 20%;
+  text-align: center;
+  margin-bottom: 15px;
+  padding-bottom: 5px;
+  border-bottom: solid #ebbab9;
 }

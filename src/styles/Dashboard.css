@@ -20,7 +20,7 @@
   }
 
 .dashboard {
-    overflow: hidden;
+  overflow: visible;
     display: flex;
     justify-content: space-evenly;
   }
