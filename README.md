@@ -1,70 +1,91 @@
-# Getting Started with Create React App
+# My Personal Portfolio Website
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Running Local Setup
 
-In the project directory, you can run:
+In this directory you can run
 
 ### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+from terminal and see the website in a development mode.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Navigating the Website
 
-### `npm test`
+## Nav Breakdown
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Overview (Home)
+- About
+- Contact
+- Statistics
+- Projects
+- Dark Toggle
 
-### `npm run build`
+### UserProfile
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The opening webpage will display a UserProfile screen which you **must click** to enter the website.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+After you have entered the website you will be met with the `Overview` page. This should reflect a User's Dashboard.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Overview (Home)
 
-### `npm run eject`
+There is a top `nav` bar that will be recurring in all pages.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+This page is made into 3 sections. 
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+#### `profileDisplay`
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+#### `coursesDisplay`
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+#### `featured`
 
-## Learn More
+#### In the first section
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+you can find a user image over user skills and an envelope. Interacting with `dash--wrapper` by clicking on it will redirect you to *About*.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Interacting with the `envelope` will redirect you to *Contact*.
 
-### Code Splitting
+#### The middle section
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+displays courses in progress and completed certifications beneath it. 
 
-### Analyzing the Bundle Size
+#### The final section
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+displays 3 of the latest projects, by which clicking will redirect to a portfolio test site.
 
-### Making a Progressive Web App
+### About
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+The main components of *About* displays the brief professional summary, and 4 key attributes.
 
-### Advanced Configuration
+- Fast Learner
+- Critical Thinker
+- Continuous Learning
+- Striving for Excellence
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+There are `<a>` listed beneath the image to redirect website visitor to corresponding profiles.
 
-### Deployment
+1. LinkedIn
+2. Github
+3. Resume
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### Contact
 
-### `npm run build` fails to minify
+Features a unique utility where the letter will update from `open` to `close` depending on the boolean passed.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This will update both the icon and the text beneath it stating whether I am accepting oppertunities.
+
+The main component is the form where the visitor can email me directly with the submission.
+
+### Statistics
+
+This page shows users exactly what certifications I possess, how many hours have been dedicated to learning, and which institutes provided said certifications.
+
+### Projects
+
+#### The projects page is yet to be completed, but this section will update when it is done.
+
+### Dark Toggle
+
+The dark toggle is a fun feature which allows users to enter the `.dark` mode and find the colors inverted from white to black, and green to pink.
+
+This successfully targets all pages.
