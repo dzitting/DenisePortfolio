@@ -13,7 +13,7 @@ import Projects from "./Projects";
 import Footer from "./Footer";
 
 function Main() {
-  const [currentPage, setCurrentPage] = useState("projects"); //Creating an object with a state set at index
+  const [currentPage, setCurrentPage] = useState("index"); //Creating an object with a state set at index
 
   const changeState = (page) => {
     //Calls the changeState with the correct page to update to
