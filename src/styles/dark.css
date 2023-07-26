@@ -53,6 +53,14 @@
     brightness(96%) contrast(94%);
 }
 
+.dark button {
+  padding: 10px 15px;
+    background-color: #ebbab9;
+    color: white;
+    border: none;
+    box-shadow: inset 2px 2px 0 0px #5a494e;
+}
+
 .dark .social-contact-icon:hover {
   filter: drop-shadow(5px 5px 5px #ebbab9);
 }

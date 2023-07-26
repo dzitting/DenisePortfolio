@@ -10,7 +10,7 @@ import Hours from "../assets/time.svg";
 
 function Statistics({ changeState }) {
   return (
-    <main id="statistics">
+    <main id="statistics" className="slideup-class">
       <div id="top-section">
         <section id="two-third">
           <div className="header-spot--wrapper">

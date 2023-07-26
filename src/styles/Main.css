@@ -22,6 +22,15 @@ header, main {
   margin: 0 auto;
 }
 
+button {
+    padding: 10px 15px;
+    background-color: #739687;
+    color: white;
+    border: none;
+    box-shadow: 2px 2px 0 0px #5a494e;
+    cursor: pointer;
+}
+
 .regular {
   color: #5a494e;
 }

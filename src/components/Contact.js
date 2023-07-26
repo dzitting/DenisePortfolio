@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "../styles/Contact.css";
+import ContactForm from "./ContactForm";
 import Open from "../assets/open-email.svg";
 import Close from "../assets/envelope-close.svg";
 import Email from "../assets/email.svg";
@@ -8,7 +9,6 @@ import Github from "../assets/github.svg";
 import PDF from "../assets/pdf-file.svg";
 import Website from "../assets/website-coding.svg";
 import Resume from "../assets/Resume_DeniseZitting.pdf";
-import ContactImg from "../assets/undraw_contact_us_re_4qqt.svg";
 
 function Contact({ changeState }) {
     const [isOpen, setIsOpen] = useState(false);
@@ -63,30 +63,7 @@ function Contact({ changeState }) {
           </li>
         </ul>
       </aside>
-      <section id="contact-section">
-        <h2 className="green">Let's Get in Touch!</h2>
-        <form>
-          <div id="first-name-input">
-            <p>First Name</p>
-            <input required name="firstName" type="text" placeholder="Enter your first name" className="contact-input"/>
-          </div>
-          <div id="last-name-input">
-            <p>Last Name</p>
-            <input name="lastName" type="text" placeholder="Enter your last name" className="contact-input"/>
-          </div>
-          <div id="email-input">
-            <p>Email</p>
-            <input required name="firstName" type="text" placeholder="Enter your email" className="contact-input"/>
-          </div>
-          <div id="message-input">
-            <p>Message</p>
-            <textarea required name="message" type="text" placeholder="Enter your message" className="contact-input"/>
-          </div>
-          <div id="submit-btn">
-            <input type="submit" value="Submit" className="submit-btn green"/>
-          </div>
-        </form>
-      </section>
+      <ContactForm changeState={changeState} />
     </main>
   );
 }
