@@ -82,7 +82,7 @@ This page shows users exactly what certifications I possess, how many hours have
 
 ### Projects
 
-####The projects page is yet to be completed, but this section will update when it is done.
+#### The projects page is yet to be completed, but this section will update when it is done.
 
 ### Dark Toggle
 
