@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "../styles/Contact.css";
-import Open from "../assets/mail.svg";
-import Close from "../assets/lowered.svg";
+import Open from "../assets/open-email.svg";
+import Close from "../assets/envelope-close.svg";
 import Email from "../assets/email.svg";
 import LinkedIn from "../assets/linkedin.svg";
 import Github from "../assets/github.svg";
@@ -11,7 +11,7 @@ import Resume from "../assets/Resume_DeniseZitting.pdf";
 import ContactImg from "../assets/undraw_contact_us_re_4qqt.svg";
 
 function Contact({ changeState }) {
-    const [isOpen, setIsOpen] = useState(true);
+    const [isOpen, setIsOpen] = useState(false);
     
   return (
     <main id="contact" className="slideup-class">
@@ -83,7 +83,7 @@ function Contact({ changeState }) {
             <textarea required name="message" type="text" placeholder="Enter your message" className="contact-input"/>
           </div>
           <div id="submit-btn">
-            <input type="submit" value="Submit" className="submit-btn"/>
+            <input type="submit" value="Submit" className="submit-btn green"/>
           </div>
         </form>
       </section>

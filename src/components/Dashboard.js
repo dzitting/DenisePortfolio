@@ -1,5 +1,5 @@
-import '../styles/Main.css';
-import '../styles/Dashboard.css';
+import "../styles/Main.css";
+import "../styles/Dashboard.css";
 import React from "react";
 import UserImg from "../assets/undraw_female_avatar_efig.svg";
 import Cert from "../assets/certificate.svg";
@@ -13,7 +13,6 @@ import WriteMe from "../assets/letter.svg";
 import Codepen from "../assets/codepen-1.jpg";
 import Shophub from "../assets/shop-hub.jpg";
 import Counselor from "../assets/counselor-img.jpg";
-
 
 function Dashboard({ changeState }) {
   const inProg = [
@@ -86,21 +85,25 @@ function Dashboard({ changeState }) {
   //   }
   // }, []);
 
-  const changeActive = () =>
-  {
+  const changeActive = () => {
     document.querySelector(".nav-link.active").classList.remove("active");
     document.getElementById("about").classList.add("active");
-  }
-  
-  const redirectFeatured = () =>
-  {
+  };
+
+  const redirectFeatured = () => {
     window.location = "https://dzitting.github.io";
-  }
-  
+  };
+
   return (
     <main className="dashboard" id="root-dash">
-      <div className='slideup-class' id="profileDisplay-div">
-        <div id="dash--wrapper" onClick={() => {changeState('about'); changeActive()}}>
+      <div className="slideup-class" id="profileDisplay-div">
+        <div
+          id="dash--wrapper"
+          onClick={() => {
+            changeState("about");
+            changeActive();
+          }}
+        >
           <figure id="dash-img--wrapper">
             <img
               id="dash-img"
@@ -109,9 +112,11 @@ function Dashboard({ changeState }) {
             />
           </figure>
           <div id="dash-name-text">
-            <h3 className='green'>Denise Zitting</h3>
-            <h3 className='green'>Front End Developer</h3>
-            <p><em>Arizona, USA</em></p>
+            <h3 className="green">Denise Zitting</h3>
+            <h3 className="green">Front End Developer</h3>
+            <p>
+              <em>Arizona, USA</em>
+            </p>
           </div>
           <div id="badges--wrapper">
             <div id="certs--wrapper">
@@ -159,13 +164,15 @@ function Dashboard({ changeState }) {
             </div>
           </div>
         </section>
-        <figure id="write-me--container">
-          <img src={WriteMe} />
-        </figure>
+        <a onClick={(event) => {changeState('contact'); changeActive(event)}}>
+          <figure id="write-me--container">
+            <img src={WriteMe} />
+          </figure>
+        </a>
       </div>
 
       <div className="slideup-class" id="coursesDisplay-div">
-        <h1 className='green'>In Progress</h1>
+        <h1 className="green">In Progress</h1>
         <div id="cards--wrapper" className="top">
           {inProg.map((item, index) => (
             <div key={index}>
@@ -179,7 +186,7 @@ function Dashboard({ changeState }) {
             </div>
           ))}
         </div>
-        <h1 className='green'>Completed</h1>
+        <h1 className="green">Completed</h1>
         <div id="cards--wrapper" className="bottom">
           {completed.map((item, index) => (
             <div key={index}>
@@ -195,19 +202,19 @@ function Dashboard({ changeState }) {
           ))}
         </div>
       </div>
-      <div className='slideup-class' id="featured-div">
-        <h1 className='green'>Featured</h1>
+      <div className="slideup-class" id="featured-div">
+        <h1 className="green">Featured</h1>
         <figure id="featured-img--wrapper">
           <img src={HeadImage} />
         </figure>
-        <div onClick={() => redirectFeatured()} className='featured-container'>
-          <figure className='featured-wrapper'>
+        <div onClick={() => redirectFeatured()} className="featured-container">
+          <figure className="featured-wrapper">
             <img src={Shophub} />
           </figure>
-          <figure className='featured-wrapper'>
+          <figure className="featured-wrapper">
             <img src={Counselor} />
           </figure>
-          <figure className='featured-wrapper'>
+          <figure className="featured-wrapper">
             <img src={Codepen} />
           </figure>
         </div>
