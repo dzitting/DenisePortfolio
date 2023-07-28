@@ -1,6 +1,8 @@
 import React, { useState } from "react";
+import emailjs from 'emailjs-com';
 import "../styles/Contact.css";
 import Complete from '../assets/complete.svg';
+require('dotenv').config();
 
 function ContactForm() {
   const [formData, setFormData] = useState({
@@ -33,6 +35,24 @@ function ContactForm() {
       [name]: value,
     }));
   };
+
+  function contact(event) {
+    event.preventDefault();
+  
+    // Replace the placeholders with your actual EmailJS Service ID, Template ID, User ID/API Key
+    emailjs
+      .sendForm(
+        process.env.EMAIL_INTERFACE_KEY,
+        process.env.TEMPLATE_KEY,
+        event.target,
+        process.env.PUBLIC_KEY
+      )
+      .catch(() => {
+        alert(
+          "The email service is temporarily unavailable. Please send your message directly to your@email.com"
+        );
+      });
+  }
 
   if (isSubmitted) {
     return (
