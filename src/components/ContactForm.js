@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "../styles/Contact.css";
-import Complete from '../assets/complete.svg';
+import ContactFail from "./ContactFail";
+import ContactSuccess from "./ContactSuccess";
 
 function ContactForm() {
   const [formData, setFormData] = useState({
@@ -11,6 +12,7 @@ function ContactForm() {
   });
 
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [isWorking, setIsWorking] = useState(false);
 
   const handleSend = (event) => {
     event.preventDefault();
@@ -34,15 +36,13 @@ function ContactForm() {
     }));
   };
 
-  if (isSubmitted) {
+  if (isSubmitted && isWorking) {
     return (
-      <section id="contact-section" className="success slideup-class">
-        <figure id="complete--wrapper">
-        <img className="logo-green" src={Complete} />
-        </figure>
-        <h1 className="green">Sent! Thank You {formData.firstName}</h1>
-        <h2 className="green">I will respond to you at {formData.email} as soon as possible!</h2>
-      </section>
+      <ContactSuccess formData={formData}/>
+    );
+  }else if(isSubmitted && !isWorking){
+    return (
+      <ContactFail />
     );
   } else {
     return (

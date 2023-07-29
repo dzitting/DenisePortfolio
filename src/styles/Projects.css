@@ -60,7 +60,7 @@
 
 #project-title {
     font-size: 48px;
-    text-align: center;
+    text-align: left;
 }
 
 .skills-list {
@@ -88,4 +88,8 @@
 
 #description--wrapper {
     width: 55%;
+}
+
+#web-project-wrapper {
+    display: flex;
 }

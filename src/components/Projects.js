@@ -5,7 +5,6 @@ import ProjectBase from "./ProjectBase";
 
 function Projects() {
   const [projectInfo, setProjectInfo] = useState({
-    bannerTitle: "",
     title: "",
     creators: "",
     skills: [],
@@ -13,9 +12,11 @@ function Projects() {
   });
 
   return (
-    <main className="slideup-class">
-      <ProjectBanner bannerTitle="Eats Now" />
+    <main style={{height: 'max-content'}} className="slideup-class">
+      <ProjectBanner />
       <ProjectBase projectInfo={projectInfo} setProjectInfo={setProjectInfo} />
+      <ProjectBanner />
+      <ProjectBase projectInfo={projectInfo} setProjectInfo={setProjectInfo}/>
     </main>
   );
 }

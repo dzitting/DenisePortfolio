@@ -1,7 +1,7 @@
 import React from "react";
 
 
-function ProjectBanner({bannerTitle}) {
+function ProjectBanner() {
 
   return (
     <section id="project--wrapper">
@@ -9,7 +9,6 @@ function ProjectBanner({bannerTitle}) {
           <figure id="banner-projects">
             <figure id="banner-projects-img"></figure>
           </figure>
-          <h1>{bannerTitle}</h1>
         </div>
       </section>
   );
