@@ -1,0 +1,30 @@
+[
+    {
+      "creators": "Denise Zitting",
+      "title": "Eats Now: Food Service App",
+      "skills": "HTML, CSS, Frontend, Static, API, Javascript",
+      "description": "This project features an open source map from OpenStreetMap that allows users to show delivery areas from the map. There are multiple tabs for users to navigate through, including a place to read different menus.",
+      "projectLink": "https://dzitting.github.io/eats-now/index.html"
+    },
+    {
+      "creators": "Denise Zitting",
+      "title": "Counselor Landing Page",
+      "skills": "HTML, CSS, Javascript",
+      "description": "This project is based off a Dribbble creation, displaying the conversion from design to UX.",
+      "projectLink": "https://dzitting.github.io/dribbble-counselor/index.html"
+    },
+    {
+      "creators": "Denise Zitting",
+      "title": "Clear Start Beta",
+      "skills": "HTML, CSS, Javascript, API, Google, json",
+      "description": "Clear Start Beta is my first live Chrome Extension developed in late 2022 during the Manifest updates. It features a dynamic calendar, and API call for local weather updates.",
+      "projectLink": "https://dzitting.github.io/clearstartbeta/main.html"
+    },
+    {
+      "creators": "Denise Zitting, Tess L. CEO",
+      "title": "Fine Art Miracles",
+      "skills": "WordPress, Divi, HTML, CSS",
+      "description": "In conjunction with Fine Art Miracles, I was employed to maintain, restructure, and deploy web updates to their website. This implemented the web builder Divi, and in some cases, hardcoding elements through HTML and CSS",
+      "projectLink": "https://fineartmiracles.com/"
+    }
+  ]
