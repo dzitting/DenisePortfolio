@@ -7,6 +7,8 @@ import EatsNowImg from '../assets/eats-now-img.jpg';
 import CounselorImg from '../assets/counselor-img.jpg';
 import ShopHub from '../assets/shop-hub.jpg';
 import Clearstart from '../assets/pexels-creative-vix-9754.jpg';
+import Fireball from '../assets/fireball.png';
+import Reddit from '../assets/reddit-client.png';
 
 function Projects() {
   const [projectInfo, setProjectInfo] = useState({
@@ -19,6 +21,22 @@ function Projects() {
 
   return (
     <main style={{ height: "max-content" }} className="slideup-class">
+      <ProjectBanner bannerImg={Fireball} />
+      <ProjectBase 
+      title="Fireball Meteors"
+      creators="Denise Zitting, Mason Sams, Lesley Tomosada, Shannan Bunch"
+      description="This project is based off a freely available NASA meteorite strike API, which is reversed located with GEOAPIfy to use coordinates that show locations."
+      skills="Next, React, Chartjs, API, VsCode, Github, Agile"
+      projectLink="https://fireball-map.netlify.app"
+      />
+      <ProjectBanner bannerImg={Reddit} />
+      <ProjectBase 
+      title="Reddit Client CodeCademy"
+      creators="Denise Zitting"
+      description="Reddit Client was a portfolio project from the Fullstack Engineering Pathway by CodeCademy. This is a frontend project utilizing React tools and Redux stores. It calls to the Reddit free json APi to find popular posts that users can interact with."
+      skills="React, Redux, API, VsCode, Github, React-Routes, HTML/CSS, Javascript, JSX"
+      projectLink="https://reddit-client-denise.netlify.app"
+      />
       <ProjectBanner bannerImg={EatsNowImg}/>
       <ProjectBase
       title="Eats Now: A Food Service App" 
