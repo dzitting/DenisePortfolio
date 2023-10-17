@@ -208,6 +208,10 @@ function Dashboard({ changeState }) {
           <img src={HeadImage} />
         </figure>
         <div onClick={() => redirectFeatured()} className="featured-container">
+          <div>
+            <h2>Check out Chattle!</h2>
+            <a href='https://chattle.netlify.app/'>Chattle Chat App</a>
+          </div>
           <figure className="featured-wrapper">
             <img src={Shophub} />
           </figure>
